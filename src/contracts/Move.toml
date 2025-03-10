@@ -1,0 +1,15 @@
+[package]
+name = "docs_sharing"
+version = "1.0.0"
+authors = []
+
+[addresses]
+keyless_docs = "862f910d4a2dd198805f94e4d9a568f642fa510c46521a11abb1d2941a4eddb9"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
