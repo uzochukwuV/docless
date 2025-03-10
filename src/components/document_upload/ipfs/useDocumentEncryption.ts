@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { encryptFile, hashKey } from './encryption';
 import { ipfsService } from './ipfs';
-import { Account, AccountAuthenticatorEd25519, AptosConfig, Network } from '@aptos-labs/ts-sdk';
+import { Account} from '@aptos-labs/ts-sdk';
 import { devnetClient } from '../../../core/constants';
 import { useKeylessAccounts } from '../../../core/useKeylessAccounts';
 
