@@ -26,9 +26,7 @@ export const useDocumentEncryption = () => {
       const keyHash = hashKey(key);
 
       // Step 2: Upload to IPFS
-      const ipfsHash = await ipfsService.uploadFile( new File(["hello world!"], "hello.txt", { type: "text/plain" }));
-        console.log(ipfsHash)
-        console.log(activeAccount?.accountAddress.toString())
+      const ipfsHash = await ipfsService.uploadFile( new File([encryptedFile], encryptFile.name, { type: "text/encripted" }));
       // Step 3: Store metadata on chain
       
       
